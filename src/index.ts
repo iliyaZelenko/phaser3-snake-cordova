@@ -5,10 +5,12 @@ import gameConfig, { pauseBtn, restartBtn, debugBtn, debugGrid } from '~/config'
 
 const onReady = () => {
   window.game = new Game(gameConfig)
-  console.log('ready!')
 }
-
-document.addEventListener('deviceready', onReady)
+if (window.cordova) {
+  document.addEventListener('deviceready', onReady)
+} else {
+  window.addEventListener('load', onReady)
+}
 // window.addEventListener('resize', () => {
 //   game.resize(window.innerWidth, window.innerHeight)
 // })

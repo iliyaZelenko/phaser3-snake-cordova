@@ -1,15 +1,23 @@
-<p align="center">
-  <img width=100% src="https://imgur.com/aPiBT1G">
-</p>
+### [Snake Demo](https://iliyazelenko.github.io/phaser3-snake-cordova/)
+
+https://iliyazelenko.github.io/phaser3-snake-cordova/
 
 ## Getting started
 
-### Installing
+### Installing the dependencies
 
 Install the dependencies:
 
 ```
 npm install
+```
+
+### Restoring platforms
+
+Platforms are automatically restored from package.json and config.xml when the 'cordova prepare' command is run.
+
+```
+cordova prepare
 ```
 
 ### Running Dev Server
@@ -22,7 +30,7 @@ npm run dev
 
 ### Building for production
 
-Perform a build (bundle.js) in `dist` folder with copy assets and html page from src.
+Perform a build (bundle.js) in `www` folder with copy assets and html page from src.
 
 ```
 npm run build
@@ -43,6 +51,7 @@ npm run build
 - [Phaser 3 Docs with TypeScript Definition File](https://github.com/photonstorm/phaser3-docs)
 - [Phaser 3 Online Docs](https://photonstorm.github.io/phaser3-docs/index.html)
 - [Phaser 3 Official Examples](https://github.com/photonstorm/phaser3-examples)
+- [Cordova off. site](https://cordova.apache.org/)
 
 ## Helpful tools
 
