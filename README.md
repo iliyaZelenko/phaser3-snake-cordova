@@ -8,10 +8,10 @@ https://iliyazelenko.github.io/phaser3-snake-cordova/
 
 ### Installing the dependencies
 
-Install the dependencies:
+Install the dependencies (yarn is recomended):
 
 ```
-npm install
+yarn # Or npm install
 ```
 
 ### Restoring platforms
@@ -27,7 +27,7 @@ cordova prepare
 Easy development in [HMR (Hot Module Replacement) mode](https://webpack.js.org/concepts/hot-module-replacement/):
 
 ```
-npm run dev
+yarn dev # Or npm run dev
 ```
 
 ### Building for production
@@ -35,7 +35,7 @@ npm run dev
 Perform a build (bundle.js) in `www` folder with copy assets and html page from src.
 
 ```
-npm run build
+yarn build # Or npm run build
 ```
 
 ### Run on cordova
