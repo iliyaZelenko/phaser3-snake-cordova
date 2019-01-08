@@ -1,0 +1,40 @@
+$colors: (primary: (#269CE9, #70B9E8), success: (#57a957, #62c462), danger: (#c43c35, #ee5f5b))
+
+.btn
+  opacity: .7
+  font-size: 1.2rem
+  display: inline-block
+  padding: 6px 20px
+  margin: 0 5px
+  cursor: pointer
+  border: 1px solid #bbb
+  border-radius: 3px
+  overflow: visible
+  color: #555
+  transition: background-color .2s ease-out
+  // fix bleeding
+  background-clip: padding-box
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset
+  text-shadow: 0 1px 0 rgba(255,255,255, .9)
+
+  .btn:hover
+    opacity: 1
+    background-color: #eee
+    color: #555
+
+  .btn:focus
+    outline: none
+
+.button.color
+  color: #fff
+  text-shadow: 0 1px 0 rgba(0,0,0,.2)
+
+@each $key, $color in $colors
+  .btn--#{$key}
+    background-color: nth($color, 1)
+    border-color: nth($color, 1)
+    color: #fff
+    text-shadow: 0 1px 0 rgba(0,0,0,.2)
+  .btn--#{$key}:hover
+    background-color: nth($color, 2)
+

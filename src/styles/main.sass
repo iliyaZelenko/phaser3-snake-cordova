@@ -1,0 +1,58 @@
+@import 'config'
+@import 'buttons'
+
+*
+  box-sizing: border-box
+
+body
+  font-size: 10px
+  color: black
+  background-color: grey // #FFFFFF
+  margin: 0
+  padding: 0
+
+#game-wrap
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+
+#game
+  position: relative
+  width: 100%
+  height: 100%
+  border-radius: 3px
+  border: 2px solid black
+
+#game__canvas-wrap
+  width: 100%
+  height: 100%
+
+  canvas
+    // removes space in bottom
+    display: block
+
+#game__grid
+  height: 100%
+  width: 100%
+  position: absolute
+  top: 0
+  background-image: repeating-linear-gradient(0deg, transparent, transparent $gridSizeMinus, $gridColor $gridSizeMinus, $gridColor $gridSize), repeating-linear-gradient(-90deg, transparent, transparent $gridSizeMinus, $gridColor $gridSizeMinus, $gridColor $gridSize)
+  background-size: $gridSize $gridSize
+  opacity: $gridOpacity
+
+  &.game__grid--hidden
+    display: none
+
+#game__overlay
+  position: absolute
+  top: 0
+  padding: 12px
+
+  &.game__overlay--hidden
+    display: none
+
+// not necessary
+@media (min-width: 1000px)
+  #game-wrap
+    padding: 50px
