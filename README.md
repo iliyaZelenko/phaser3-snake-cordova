@@ -1,3 +1,5 @@
+![](https://i.imgur.com/tfiFz2r.png)
+
 ### [Snake Demo](https://iliyazelenko.github.io/phaser3-snake-cordova/)
 
 https://iliyazelenko.github.io/phaser3-snake-cordova/
@@ -34,6 +36,29 @@ Perform a build (bundle.js) in `www` folder with copy assets and html page from 
 
 ```
 npm run build
+```
+
+### Run on cordova
+
+Run on real device:
+
+```
+cordova run android --device
+```
+
+Run on emulator (virtual device):
+
+```
+cordova run android
+```
+
+Run on specific emulator:
+
+```
+# shows list of devices
+cordova run android --list
+# specify device
+cordova run android --target "Nexus_4_API_26"
 ```
 
 ## Cheat Sheets
