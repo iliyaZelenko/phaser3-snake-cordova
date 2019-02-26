@@ -2,6 +2,8 @@
 
 ### [Snake Demo](https://iliyazelenko.github.io/phaser3-snake-cordova/)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/iliyaZelenko/phaser3-snake-cordova.svg)](https://greenkeeper.io/)
+
 https://iliyazelenko.github.io/phaser3-snake-cordova/
 
 ## Getting started
